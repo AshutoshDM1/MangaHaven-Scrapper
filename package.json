@@ -1,0 +1,29 @@
+{
+  "name": "mangascraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "simple": "tsc && node dist/simple/scraper.js",
+    "cheerio": "tsc && node dist/simple/cheerio-scraper.js",
+    "chapter": "tsc && node dist/simple/chapter-downloader.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/cheerio": "^1.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.17",
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.8.2"
+  }
+}
